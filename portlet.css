@@ -1,0 +1,10 @@
+
+.plugin-gridster.jarvis .front {
+  background: #b80404 url('images/jarvis.png') center;
+  background-size:   160px 160px;
+  background-repeat: no-repeat;
+}
+
+.plugin-gridster.jarvis .back {
+  background: #FFFFFF;
+}

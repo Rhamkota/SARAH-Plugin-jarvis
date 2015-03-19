@@ -1,0 +1,159 @@
+	<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulejarvis" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulejarvis" scope="public">
+    <tag>out.action=new Object(); </tag>
+
+    <item>Sarah</item>
+
+    <one-of>
+	
+	<item>tu ai la<tag>out.action.val="la"</tag></item>
+
+	<!-- affichage écran -->
+      <item>affiche ton interface<tag>out.action.val="runjarvis"</tag></item>
+      <item>active ton interface<tag>out.action.val="runjarvis"</tag></item>
+      <item>lance ton interface<tag>out.action.val="runjarvis"</tag></item>
+      <item>masque ton interface<tag>out.action.val="closejarvis"</tag></item>
+      <item>ferme ton interface<tag>out.action.val="closejarvis"</tag></item>
+      <item>désactive ton interface<tag>out.action.val="closejarvis"</tag></item>
+	 
+ 	  <item>affiche le bureau<tag>out.action.val="minimize"</tag></item>
+ 	  <item>va sur le bureau<tag>out.action.val="minimize"</tag></item>
+	  <item>restore<tag>out.action.val="restore"</tag></item>
+	  <item>affiche les fenetres<tag>out.action.val="restore"</tag></item>
+	  
+	  <item>vue global<tag>out.action.val="global"</tag></item>
+	  <item>affiche la vue d'ensemble<tag>out.action.val="global"</tag></item>
+	  <item>affiche toute les fenetres<tag>out.action.val="global"</tag></item>
+	  <item>fais voir toute les fenetres<tag>out.action.val="global"</tag></item>
+	  
+	  <item>ferm tou<tag>out.action.val="allquit"</tag></item>
+	  <item>ferme tout<tag>out.action.val="allquit"</tag></item>
+	  
+	  
+	  <!-- page internet -->
+	  <item>actualise<tag>out.action.val="f5"</tag></item>
+	  <item>raffraichis<tag>out.action.val="f5"</tag></item>
+	  <item>met a jour<tag>out.action.val="f5"</tag></item>
+	  <item>relance<tag>out.action.val="f5"</tag></item>
+	  <item>lance ta page de conf<tag>out.action.val="home"</tag></item>
+	  <item>affiche le home<tag>out.action.val="home"</tag></item>
+	  <item>fait voir le home<tag>out.action.val="home"</tag></item>
+	  <item>affiche le store<tag>out.action.val="store"</tag></item>
+	  <item>fait voir le store<tag>out.action.val="store"</tag></item>
+	  <item>affiche la boxe<tag>out.action.val="box"</tag></item>
+	  <item>fait voir la boxe<tag>out.action.val="box"</tag></item>
+	  
+	  <item>ferme l'onglet<tag>out.action.val="f4"</tag></item>
+	  <item>va sur fèillsbouque<tag>out.action.val="facebook"</tag></item>
+	  <item>va sur le forum<tag>out.action.val="forum"</tag></item>
+	  <item>fais voir le forum<tag>out.action.val="forum"</tag></item>
+	  <item>va sur youtube<tag>out.action.val="youtube"</tag></item>
+	  <item>affiche la comunoté<tag>out.action.val="com"</tag></item>
+	  <item>fais voir la communauté<tag>out.action.val="com"</tag></item>
+	  
+	  <!-- dossier explorateur -->
+	  <item>affiche les pluguine<tag>out.action.val="plugins"</tag></item>
+	  <item>fait voir les pluguine<tag>out.action.val="plugins"</tag></item>
+	  <item>affiche tes pluguine<tag>out.action.val="plugins"</tag></item>
+	  <item>fait  voir tes pluguine<tag>out.action.val="plugins"</tag></item>
+	  <item>fait  voir dossier<tag>out.action.val="dossier"</tag></item>
+	  <item>affiche ton dossier<tag>out.action.val="dossier"</tag></item>
+	  <item>affiche mes images<tag>out.action.val="images"</tag></item>
+	  <item>fait  voir mes images<tag>out.action.val="images"</tag></item>
+	  <item>affiche les images<tag>out.action.val="images"</tag></item>
+	  <item>fait  voir images<tag>out.action.val="images"</tag></item>
+	  <item>fais voir les images<tag>out.action.val="images"</tag></item>
+	  <item>fais voir mes images<tag>out.action.val="images"</tag></item>
+	  <item>affiche mes documents<tag>out.action.val="documents"</tag></item>
+	  <item>affiche les documents<tag>out.action.val="documents"</tag></item>
+	  <item>affiche le dossier hélico<tag>out.action.val="documents"</tag></item>
+	  <item>affiche les images d'hélico<tag>out.action.val="documents"</tag></item>
+	  <item>affiche le disque B<tag>out.action.val="b"</tag></item>
+	  <item>affiche le disque externe<tag>out.action.val="b"</tag></item>
+	  <item>affiche les téléchargements<tag>out.action.val="dl"</tag></item>
+	  <item>affiche les torrent<tag>out.action.val="dl"</tag></item>
+	  <item>fais voir les torraint<tag>out.action.val="dl"</tag></item>
+	  <item>affiche les disk<tag>out.action.val="ordinateur"</tag></item>
+	  <item>fais voir les disk<tag>out.action.val="ordinateur"</tag></item>
+
+
+	<!-- lancement fermeture de logiciels -->
+	 
+	  
+	  <item>lance failleurfox<tag>out.action.val="runfirefox"</tag></item>
+	  <item>ouvre failleurfox<tag>out.action.val="runfirefox"</tag></item>
+	  <item>ferme failleurfox<tag>out.action.val="closefirefox"</tag></item>
+	  
+	  <item>lance notpad<tag>out.action.val="runnotepad"</tag></item>
+	  <item>lance notepad<tag>out.action.val="runnotepad"</tag></item>
+	  <item>lance notepade<tag>out.action.val="runnotepad"</tag></item>
+	  <item>lance l'editeur<tag>out.action.val="runnotepad"</tag></item>
+	  <item>ferme notpad<tag>out.action.val="closenotepad"</tag></item>
+	  
+	  
+	  <item>lance seundeurbeurde<tag>out.action.val="runmail"</tag></item>
+	  <item>ouvre les mail<tag>out.action.val="runmail"</tag></item>
+	  <item>fait voir les mail<tag>out.action.val="runmail"</tag></item>
+	  
+	  <item>ferme les mail<tag>out.action.val="closemail"</tag></item>
+	  <item>ferme seundeurbeurde<tag>out.action.val="closemail"</tag></item>
+	  
+	  <item>lance ketchup<tag>out.action.val="sketchup"</tag></item>
+	  <item>lance sketchup<tag>out.action.val="sketchup"</tag></item>
+	  
+	  
+	  <!-- suivant précedent sauvegarde ferme... -->
+	  <item>préçedent<tag>out.action.val="precedent"</tag></item>
+	  <item>suivant<tag>out.action.val="next"</tag></item><item>préçedent<tag>out.action.val="precedent"</tag></item>
+	  <item>valide<tag>out.action.val="enter"</tag></item>
+	  <item>sauvegarde<tag>out.action.val="save"</tag></item>
+	  <item>fenêtre suivante<tag>out.action.val="tab"</tag></item>
+	  <item>ferme<tag>out.action.val="shut"</tag></item>
+	  <item>ferm<tag>out.action.val="shut"</tag></item>
+
+	  
+	 
+	<!-- gestion du PC --> 
+	  <item>éteind le PC<tag>out.action.val="runshutdown"</tag></item>
+	  <item>éteind l'PC<tag>out.action.val="runshutdown"</tag></item>
+	  <item>éteind l'ordinateur<tag>out.action.val="runshutdown"</tag></item>
+	  <item>arrête le PC<tag>out.action.val="runshutdown"</tag></item>
+	  <item>arrête l'ordinateur<tag>out.action.val="runshutdown"</tag></item>
+	  
+	  <item>redémar le PC<tag>out.action.val="runrestart"</tag></item>
+	  <item>redémar l'ordinateur<tag>out.action.val="runrestart"</tag></item>
+	  <item>lance vlc<tag>out.action.val="runvlc"</tag></item>
+	  <item>lance notpad<tag>out.action.val="runnotepad"</tag></item>
+	  
+	  <!-- redémarage du serveur node + client micro-->
+	  <item>relance le systaime<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	  <item>relance ton systaime<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	  <item>redémar le systaime<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	  <item>redémar ton systaime<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	  <item>redémar<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	 
+	 <!-- gestion des périphériques -->
+	 
+	 <item>réveilles toi<tag>out.action.val="enter"</tag></item>
+	 <item>reviens<tag>out.action.val="enter"</tag></item>
+	 <item>éteinds l'écrans<tag>out.action.val="screenOff"</tag></item>
+	 <item>allume l'écrans<tag>out.action.val="screenOn"</tag></item>
+	 <item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>
+	 <item>ferme le Dévédé<tag>out.action.val="dvdoff"</tag></item>
+	 <item>ouvre le lecteur<tag>out.action.val="dvdon"</tag></item>
+	 <item>ferme le lecteur<tag>out.action.val="dvdoff"</tag></item>
+	 <item>passe sur le casque<tag>out.action.val="switch"</tag></item>
+	 <item>passe sur le casque<tag>out.action.val="switch"</tag></item>
+	 <item>change la sortie audio<tag>out.action.val="switch"</tag></item>
+
+	 <item>ajuste le micro<tag>out.action.val="microadjust"</tag></item>
+
+	 <!-- bras robot-->
+	 
+	 	 
+
+    </one-of>
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/jarvis";</tag>
+  </rule> 
+</grammar>

@@ -1,0 +1,74 @@
+<div id="J.A.R.V.I.S">
+  
+  <div class="row-fluid">
+		<div class="span11">
+			<p>Le plugin <b>Jarvis</b> est un pluguin destiner a controler, et naviguer sur votre PC, il permet d'ouvrir des dossiers, documents, lancer des logiciels (jeux, editeur de texte...),<br/>
+			 ouvrir des pages web, agir sur les périphériques du PC.<br/>
+			 Pour que Sarah puisse ouvrir les logiciels il est important de <b>modifier les adresses</b> de ces derniers dans les fichiers <b>.bat</b> du dossier <b>bin</b><br/>.<br>
+      </p>
+
+      		<p>Fonctionnement du pluguin :</p>
+
+      		<p>
+      		Le xml se compose de commande de ce genre :
+      			<xmp><item>[commande]<tag>out.action.val="[valeur]"</tag></item></xmp>
+	
+			<b>commande :</b> suite de mors reconnus par le client.<br/>
+			<b>valeur :</b> valeur lu dans par le fichiers js qui renseigne au fichier js ce qu'on lui demande.<br/>
+
+			<br/>
+			Voiçi un exemple
+			<xmp><item>affiche ton interface<tag>out.action.val="runjarvis"</tag></item></xmp>
+
+
+			Dans le fichiers js les commandes son lus de cette façon :
+      			<xmp>case "[valeur]":
+	  var process = '%CD%/plugins/jarvis/bin/[fichier cible]';
+	  var Txt = new Array; 
+			Txt[0] = "[texte de la réponse]";
+			break;</xmp>
+			<b>valeur :</b> on retrouve donc la valeur que l'on a renseigné dans la commande du xml si on reprend notre exemple la valeur serait <b>runjarvis</b>.<br/>
+			<b>fichier cible :</b> nom du fuchier <b>.bat</b> <b>.vbs</b> ou ce que vous voudrez qui sera executé.<br/>
+			<b>texte de la réponse :</b> liste de phrase que sarah dira de façon aléatoire de façon a casser la monotonie des réponses<br/>
+			 et de la rendre un peu plus humaine.<br/>
+		<br/>
+		<br/>	
+		Voici ce que donnerais le code js qui correspond à l'exemple plus haut pour le xml
+	  <xmp>case "runjarvis":
+	  var process = '%CD%/plugins/jarvis/bin/runjarvisbat';
+	  var Txt = new Array; 
+			Txt[0] = "j'ai affiché mon interface";
+			Txt[1] = "je m'en auccupe";
+			Txt[2] = "tout de suite";
+			Txt[3] = "c'est fait";
+
+	  break;</xmp>
+	  <br/>
+	  <br/>
+	  Comme vous le voyez vous pouvez renseigné plusieurs réponse pour la réponse aléatoire.<br/>
+	  il est important de respecter la structure 
+	    <xmp>var Txt = new Array; 
+			Txt[0] = "phrase 1";
+			Txt[1] = "phrase 2";
+			Txt[2] = "phrase 3";
+			Txt[3] = "phrase 4";
+			</xmp>
+
+      		</p>
+			<p>fonctions possible :</p>
+
+			<p><i>Sarah, tu es là ?</i> :
+				<ul>
+					<li> elle répond "une des réponses aléatoires, cette commande sert à vérifier que sarah vous entend, qu'elle est en route ou en veille.</li>
+				</ul>
+				gestions des périphériques
+				<ul>
+					<li><i>Sarah, éteinds l'écran</i> : Sarah éteint l'écran</li>
+					<li><i>Sarah, ouvre le DVD</i> : Sarah ouvre le lecteur DVD de votre PC</li>
+					<li><i>Sarah, change la sortie audio</i> : Sarah passe le son du PC des enceinte à votre casque ou ampli (nécessite le logiciel Soundswich </li>
+				</ul>
+			</p>
+		</div>
+  </div>
+
+</div>

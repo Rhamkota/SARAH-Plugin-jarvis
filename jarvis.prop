@@ -1,0 +1,8 @@
+{
+  "modules": { 
+    "jarvis": {
+      "description": "Actions AutoHotKey pour Interface Jarvis v2",
+      "version": "1.00"
+    }
+  }
+}
