@@ -1,1 +1,0 @@
-start D:\"Programmes\Worldofplanes\WOWpLauncher.exe"
